@@ -17,7 +17,7 @@ static int	ft_sofa(char const *s, char c)
 	int res;
 
 	res = 0;
-	while (*s == c)
+	while (*s == c && *s)
 		s++;
 	while (*s)
 	{
@@ -40,7 +40,7 @@ static char	*ft_mallocandfree(int size, char **result, int count)
 {
 	char *all;
 
-	if (!(all = (char*)malloc(sizeof(char*) * size)))
+	if (!(all = (char*)malloc(sizeof(char) * size)))
 	{
 		while (count > 0)
 			free(result[count--]);
