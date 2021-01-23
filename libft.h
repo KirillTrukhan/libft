@@ -6,7 +6,7 @@
 /*   By: tnotch <tnotch@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:57:27 by tnotch            #+#    #+#             */
-/*   Updated: 2020/11/11 19:11:36 by tnotch           ###   ########.fr       */
+/*   Updated: 2021/01/23 19:35:11 by tnotch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char				*ft_reverse(char *str);
 char				**ft_split(char const *s, char c);
 char				*ft_strchr(const char *str, int ch);
 char				*ft_strdup(const char *s1);
-char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoin(char *s1, char *s2);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlcpy(char *dst, const char *src, size_t buf);
 long unsigned int	ft_strlen(const char *str);
